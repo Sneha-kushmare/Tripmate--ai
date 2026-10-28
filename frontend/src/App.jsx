@@ -14,13 +14,13 @@ function App() {
     group_size: '2', currency: 'INR'
   });
   const [trip, setTrip] = useState(null);
-  const [saved, setSaved] = useState(() => JSON.parse(localStorage.getItem('wayfarer-trips') || '[]'));
+  const [saved, setSaved] = useState(() => JSON.parse(localStorage.getItem('TripMate AI-trips') || '[]'));
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [activeDay, setActiveDay] = useState(0);
   const [mobileMenu, setMobileMenu] = useState(false);
 
-  useEffect(() => localStorage.setItem('wayfarer-trips', JSON.stringify(saved)), [saved]);
+  useEffect(() => localStorage.setItem('TripMate AI-trips', JSON.stringify(saved)), [saved]);
   const update = (key, value) => setForm(prev => ({ ...prev, [key]: value }));
   const toggleInterest = item => update('interests', form.interests.includes(item) ? form.interests.filter(x => x !== item) : [...form.interests, item]);
 
@@ -55,7 +55,7 @@ function App() {
 
   return <div className="app-shell">
     <aside className={`sidebar ${mobileMenu ? 'open' : ''}`}>
-      <div className="brand"><div className="brand-mark"><Compass size={22}/></div><div>wayfarer<span>TRAVEL, THOUGHTFULLY</span></div><button className="close-menu" onClick={()=>setMobileMenu(false)}><X/></button></div>
+      <div className="brand"><div className="brand-mark"><Compass size={22}/></div><div>TripMate AIr<span>TRAVEL, THOUGHTFULLY</span></div><button className="close-menu" onClick={()=>setMobileMenu(false)}><X/></button></div>
       <div className="side-label">WORKSPACE</div>
       <a className="side-link active" href="#planner"><Compass size={18}/> Trip planner</a>
       <a className="side-link" href="#itinerary"><CalendarDays size={18}/> My itinerary</a>
@@ -108,7 +108,7 @@ function App() {
           </div>
         </section>
       </div>
-      <footer><div className="footer-brand"><Compass size={17}/> wayfarer</div><span>Travel thoughtfully. Leave room for wonder.</span><span>Student project · Estimates are illustrative</span></footer>
+      <footer><div className="footer-brand"><Compass size={17}/> TripMate AI</div><span>Travel thoughtfully. Leave room for wonder.</span><span>Student project · Estimates are illustrative</span></footer>
     </main>
   </div>;
 }
