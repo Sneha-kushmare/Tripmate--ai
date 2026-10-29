@@ -55,7 +55,7 @@ function App() {
 
   return <div className="app-shell">
     <aside className={`sidebar ${mobileMenu ? 'open' : ''}`}>
-      <div className="brand"><div className="brand-mark"><Compass size={22}/></div><div>TripMate AIr<span>TRAVEL, THOUGHTFULLY</span></div><button className="close-menu" onClick={()=>setMobileMenu(false)}><X/></button></div>
+      <div className="brand"><div className="brand-mark"><Compass size={22}/></div><div>TripMate AI<span>TRAVEL, THOUGHTFULLY</span></div><button className="close-menu" onClick={()=>setMobileMenu(false)}><X/></button></div>
       <div className="side-label">WORKSPACE</div>
       <a className="side-link active" href="#planner"><Compass size={18}/> Trip planner</a>
       <a className="side-link" href="#itinerary"><CalendarDays size={18}/> My itinerary</a>
