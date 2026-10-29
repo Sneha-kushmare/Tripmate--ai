@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Compass, MapPin, CalendarDays, Wallet, Sparkles, Bookmark, ArrowRight, Clock3, Users, CheckCircle2, Plane, Utensils, Trees, Landmark, RefreshCw, Trash2, Menu, X } from 'lucide-react';
 
-const API = import.meta.env.VITE_API_BASE_URL || 'http://https://tripmate-ai-backend-5ipr.onrender.com';
+const API = import.meta.env.VITE_API_BASE_URL || 'https://tripmate-ai-backend-5ipr.onrender.com';
 const INTERESTS = ['Culture', 'Food', 'Nature', 'Adventure', 'Shopping', 'History', 'Temples', 'Beaches'];
 const today = new Date();
 const dateString = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;

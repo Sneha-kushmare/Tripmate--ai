@@ -33,7 +33,7 @@ uvicorn app.main:app --reload
 
 If PowerShell blocks activation, run `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` in that terminal, then activate again.
 
-Backend docs: http://https://tripmate-ai-backend-5ipr.onrender.com/docs
+Backend docs:https://tripmate-ai-backend-5ipr.onrender.com/docs
 
 ### 2. Frontend
 Open a **second** terminal at the project root:
